@@ -85,7 +85,7 @@ export const defaultFormatters: ChonkyFormatters = {
         if (safeModDate) {
             return intl.formatDate(safeModDate, {
                 dateStyle: 'medium',
-                timeStyle: 'short',
+                // timeStyle: 'short', // TODO: show time to uncomment
             });
         } else {
             return null;

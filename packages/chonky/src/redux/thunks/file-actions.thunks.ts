@@ -120,7 +120,7 @@ export const thunkActivateSortAction = (fileActionId: Nilable<string>): ChonkyTh
     const action = fileActionMap[fileActionId];
     if (!action || !action.sortKeySelector) return;
 
-    let order = oldOrder === SortOrder.ASC ? SortOrder.DESC : SortOrder.ASC;
+    let order = oldOrder === SortOrder.DESC ? SortOrder.DESC : SortOrder.ASC;
     if (oldActionId !== fileActionId) {
         order = SortOrder.ASC;
     }
