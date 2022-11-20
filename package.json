@@ -5,14 +5,14 @@
     "packages/*"
   ],
   "devDependencies": {
-    "lerna": "^3.22.1"
+    "lerna": "^6.0.3"
   },
   "homepage": "https://github.com/akbaruddin/Chonky",
   "author": {
     "name": "akbaruddin"
   },
   "resolutions": {
-    "**/typescript": "4.2.2",
+    "**/typescript": "4.6.4",
     "**/immer": "8.0.4"
   },
   "repository": {
