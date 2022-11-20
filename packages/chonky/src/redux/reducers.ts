@@ -54,11 +54,11 @@ const reducers = {
         state.filesErrorMessages = errorMessages;
 
         const fileMap: FileMap = {};
-        files.forEach(f => {
+        files.forEach((f: any) => {
             if (f) fileMap[f.id] = f;
         });
-        const fileIds = files.map(f => (f ? f.id : null));
-        const cleanFileIds = fileIds.filter(f => !!f) as string[];
+        const fileIds = files.map((f: any) => (f ? f.id : null));
+        const cleanFileIds = fileIds.filter((f: any) => !!f) as string[];
 
         state.fileMap = fileMap;
         state.fileIds = fileIds;

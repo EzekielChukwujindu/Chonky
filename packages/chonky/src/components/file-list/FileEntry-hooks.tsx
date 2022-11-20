@@ -91,7 +91,7 @@ const _extname = (fileName: string) => {
     return '';
 };
 
-export const useFileNameComponent = (file: Nullable<FileData>) => {
+export const useFileNameComponent = (file: Nullable<FileData|any>) => {
     return useMemo(() => {
         if (!file) return <TextPlaceholder minLength={15} maxLength={20} />;
 
@@ -102,8 +102,8 @@ export const useFileNameComponent = (file: Nullable<FileData>) => {
         if (isDir) {
             name = file.name;
         } else {
-            extension = file.ext ?? _extname(file.name);
-            name = file.name.substr(0, file.name.length - extension.length);
+            extension = file?.ext ?? _extname(file?.name);
+            name = file?.name.substr(0, file?.name.length - extension.length);
         }
 
         return (

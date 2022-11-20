@@ -174,7 +174,7 @@ const getHiddenFileIdMap = createSelector(
     (searchFilteredFileIds, cleanFiles, showHiddenFiles) => {
         const searchFilteredFileIdsSet = new Set(searchFilteredFileIds);
         const hiddenFileIdMap: any = {};
-        cleanFiles.forEach(file => {
+        cleanFiles.forEach((file: any) => {
             if (!file) return;
             else if (!searchFilteredFileIdsSet.has(file.id)) {
                 // Hidden by seach

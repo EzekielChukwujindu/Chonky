@@ -28,6 +28,7 @@ export interface FileData {
     folderChainIcon?: Nullable<ChonkyIconName | string | any>; // Folder chain icon
 
     [property: string]: any; // Any other user-defined property
+
 }
 
 export type FileArray<FT extends FileData = FileData> = Nullable<FT>[];
