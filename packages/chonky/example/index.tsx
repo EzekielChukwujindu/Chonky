@@ -1,7 +1,10 @@
 // import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { FullFileBrowser, ChonkyActions } from '../src';
+import { FullFileBrowser, ChonkyActions, setChonkyDefaults } from '../src';
+import { ChonkyIconFA } from '../../chonky-icon-fontawesome/src';
+
+setChonkyDefaults({ iconComponent: ChonkyIconFA });
 
 const data = [
     {
