@@ -1,6 +1,6 @@
 {
   "name": "chonky-icon-fontawesome-custom",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "FontAwesome icon component for Chonky file browser",
   "license": "MIT",
   "main": "dist/index.iife.js",
@@ -55,7 +55,7 @@
     "@fortawesome/free-brands-svg-icons": "5.13.1",
     "@fortawesome/free-solid-svg-icons": "^5.13.1",
     "@fortawesome/react-fontawesome": "^0.1.12",
-    "chonky": "^2.3.2"
+    "chonky-custom": "^0.0.57"
   },
   "homepage": "https://github.com/akbaruddin/Chonky",
   "author": {
