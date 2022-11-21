@@ -5,10 +5,15 @@ export default defineConfig((options) => ({
   splitting: false,
   sourcemap: true,
   clean: true,
+  dts: true,
+  format: ['cjs', 'esm', 'iife'],
   minify: !options.watch,
   outExtension({ format }) {
     return {
       js: `.${format}.js`,
     }
   },
+  env: {
+    NODE_ENV: !options.watch ? 'development': 'production'
+  }
 }))
