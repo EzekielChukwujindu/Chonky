@@ -1,6 +1,6 @@
 {
   "name": "chonky-icon-fontawesome-custom",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "FontAwesome icon component for Chonky file browser",
   "license": "MIT",
   "main": "dist/index.iife.js",
@@ -57,7 +57,7 @@
     "@fortawesome/react-fontawesome": "^0.1.12",
     "chonky-custom": "^0.0.57"
   },
-  "homepage": "https://github.com/akbaruddin/Chonky",
+  "homepage": "https://637b776fe5a034549ff1e4cb-mdfulkhrat.chromatic.com/?path=/story/chonkyicon--icon-with-name",
   "author": {
     "name": "akbaruddin"
   },
