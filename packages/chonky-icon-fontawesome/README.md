@@ -30,6 +30,8 @@ for React. Please refer to [the official documentation][docs] for usage instruct
   </a>
 </p>
 
+![Icons](./icons.png)
+
 ## Usage
 
 ```shell
@@ -43,5 +45,5 @@ import { ChonkyIconFA } from 'chonky-icon-fontawesome-custom';
 setChonkyDefaults({ iconComponent: ChonkyIconFA });
 ```
 
-[chonky]: https://chonky.io/
-[docs]: https://chonky.io/docs/2.x/installation-usage
+[chonky]: https://637b776fe5a034549ff1e4cb-mdfulkhrat.chromatic.com/?path=/story/chonkyicon--icon-with-name
+[docs]: https://github.com/akbaruddin/Chonky/tree/2.x-tsup/packages/chonky-icon-fontawesome
