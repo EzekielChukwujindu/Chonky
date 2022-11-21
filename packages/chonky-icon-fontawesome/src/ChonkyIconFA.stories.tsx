@@ -1,17 +1,27 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { ChonkyIconFA } from "./ChonkyIconFA";
+import { ChonkyIconFA } from './ChonkyIconFA';
 
-// More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
+const Icons: React.FC<{ iconList: string[] }> = ({ iconList }) => {
+  return (
+    <>
+      {iconList.map((icon: string) => (
+        <span className="icon">
+          <ChonkyIconFA icon={icon} />
+        </span>
+      ))}
+    </>
+  );
+};
+
 export default {
   title: 'ChonkyIcon',
-  component: ChonkyIconFA,
-  // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
-  argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-} as ComponentMeta<typeof ChonkyIconFA>;
+  component: Icons,
+} as ComponentMeta<typeof Icons>;
 
-const Template: ComponentStory<typeof ChonkyIconFA> = (args) => <ChonkyIconFA {...args} />;
+const Template: ComponentStory<typeof Icons> = (args) => <Icons {...args}></Icons>;
 
 export const Default = Template.bind({});
+Default.args = {
+  iconList: ['', 'pdf'],
+};
