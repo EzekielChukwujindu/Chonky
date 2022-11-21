@@ -3,6 +3,33 @@
 This package contains the icon component for [Chonky][chonky], a file browser component
 for React. Please refer to [the official documentation][docs] for usage instructions.
 
+<p>
+  <a href="https://www.npmjs.com/package/chonky-icon-fontawesome-custom">
+    <img
+      alt="NPM package"
+      src="https://img.shields.io/npm/v/chonky-icon-fontawesome-custom.svg?style=flat&colorB=ffac5c"
+    />
+  </a>
+  <a href="https://tldrlegal.com/license/mit-license">
+    <img
+      alt="MIT license"
+      src="https://img.shields.io/npm/l/chonky-icon-fontawesome-custom?style=flat&colorB=dcd67a"
+    />
+  </a>
+  <a href="https://www.npmjs.com/package/chonky-icon-fontawesome-custom">
+    <img
+      alt="NPM downloads"
+      src="https://img.shields.io/npm/dt/chonky-icon-fontawesome-custom?style=flat&colorB=aef498"
+  />
+  </a>
+  <a href="https://github.com/akbaruddin/Chonky">
+    <img
+      alt="GitHub stars"
+      src="https://img.shields.io/github/stars/akbaruddin/Chonky?style=flat&colorB=50f4cc"
+  />
+  </a>
+</p>
+
 ## Usage
 
 ```shell

@@ -1,4 +1,4 @@
-import { defineConfig } from 'tsup'
+import { defineConfig } from 'tsup';
 
 export default defineConfig((options) => ({
   entry: ['src/index.ts'],
@@ -11,9 +11,10 @@ export default defineConfig((options) => ({
   outExtension({ format }) {
     return {
       js: `.${format}.js`,
-    }
+    };
   },
   env: {
-    NODE_ENV: !options.watch ? 'development': 'production'
-  }
-}))
+    NODE_ENV: !options.watch ? 'development' : 'production',
+  },
+  metafile: true,
+}));
