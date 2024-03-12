@@ -16,10 +16,6 @@ lerna-*.log
 # Testing
 /coverage
 
-# Production
-lib/
-dist/
-build/
 
 # Misc
 .DS_Store
